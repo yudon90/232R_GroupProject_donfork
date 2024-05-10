@@ -14,12 +14,12 @@ Individual & household census data from the American Community Survey years 2012
  **Data Exploration**
  
 Import Dataset
-Household Census Data
-*a. Household Variables: Geographic Variables
-*b. Household Variables: Technical Variables
-*c. Household Variables: Economic Variables
-*d. Household Variables: App,Mec,Other Variables
-*e. Household Variables: Household Comp Variables
+*Household Census Data
+  *a. Household Variables: Geographic Variables
+  *b. Household Variables: Technical Variables
+  *c. Household Variables: Economic Variables
+  *d. Household Variables: App,Mec,Other Variables
+  *e. Household Variables: Household Comp Variables
  
 Individual Census Data
 *a. Ind Variables: Household Variables
