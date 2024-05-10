@@ -135,7 +135,7 @@ The distribution of all variables was examined to ensure the dataset was represe
 For the household census dataset, each row repressnts an individuals but all variables were measured on a household level so the dataset was filtered to remove individuals within the same household to leave unique household instances. 
 The World Happiness Report Dataset was filtered to only include US datapoints between the year of 2012-2022.
 All monetary variables were normalized for inflation to the 2000 dollar values.
-Further scaling of all variables will be dependent on the analysis that is being performed.
+Further scaling of all variables will be dependent on the analysis that is being performed. Most likely all variables will normalizes for clustering algorithms. Due to the differnces in range, normalization of some variables with large ranges may lead to misrepresnetation of the data so another transformation process may be more appropriate. Besides clustering individuals into like subpopulation and examining how they shift over time, other machine learning algorithms will be used to identify important variables that correlate with happiness. 
 Any variables that were missing from too many individuals and/or households will be removed from further analysis. 
 
 **Environment Setup**
