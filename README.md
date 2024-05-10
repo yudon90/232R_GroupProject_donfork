@@ -45,4 +45,5 @@ Describe variables and categories
 
 
 Environment Setup
+
 pip install pyspark-dist-explore
