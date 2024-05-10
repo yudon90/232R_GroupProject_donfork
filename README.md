@@ -11,5 +11,38 @@ This project aims to uncover trends in happiness across the United States by ana
 This project will combine multiple datasets. 
 Individual & household census data from the American Community Survey years 2012-2022 excluding 2020 due to the data being impacted by the COVID-19 pandemic. Due to the size of the data, we selected features from the entire dataset using IPUMS. The datasets can be found in this Google Drive (https://drive.google.com/drive/folders/1BgAn6uJvuALPtYoMj1vYInDOWKlxUyXX?usp=drive_link) and can be accessed following these instructions https://usa.ipums.org/usa/extract_instructions.shtml
 
-**Preprocessing Methodology**: 
--
+ **Data Exploration**
+ 
+Import Dataset
+Household Census Data
+a. Household Variables: Geographic Variables
+b. Household Variables: Technical Variables
+c. Household Variables: Economic Variables
+d. Household Variables: App,Mec,Other Variables
+e. Household Variables: Household Comp Variables
+Individual Census Data
+a. Ind Variables: Household Variables
+b. Ind Variables: Technical Variables
+c. Ind Variables: Demographic Variables
+d. Ind Variables: Education Variables
+e. Ind Variables: Employment & Income Variables
+f. Ind Variables: Health Variables
+Visualize distribution of all variables over whole dataset and years
+
+**Preprocessing Methodology**
+
+Count number of households
+Count number of N/A and missing variables that are represented by numeric key
+Count nulls
+Add interpretations to each variables
+Indicate which variables may not be useful
+Investigate weights
+Count demographic categories
+Define Why categories aren't equally distributed with logic/other supporting metrics
+Add comparison between household data and individual data
+Normalize monetary values
+Describe variables and categories
+
+
+Environment Setup
+pip install pyspark-dist-explore
