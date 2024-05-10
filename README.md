@@ -22,28 +22,28 @@ Household Census Data
 5. Household Variables: Household Comp Variables
  
 Individual Census Data
-*a. Ind Variables: Household Variables
-*b. Ind Variables: Technical Variables
-*c. Ind Variables: Demographic Variables
-*d. Ind Variables: Education Variables
-*e. Ind Variables: Employment & Income Variables
-*f. Ind Variables: Health Variables
+1. Ind Variables: Household Variables
+2. Ind Variables: Technical Variables
+3. Ind Variables: Demographic Variables
+4. Variables: Education Variables
+5. Ind Variables: Employment & Income Variables
+6. Ind Variables: Health Variables
  
 Visualize distribution of all variables over whole dataset and years
 
 **Preprocessing Methodology**
 
-Count number of households
-Count number of N/A and missing variables that are represented by numeric key
-Count nulls
-Add interpretations to each variables
-Indicate which variables may not be useful
-Investigate weights
-Count demographic categories
-Define Why categories aren't equally distributed with logic/other supporting metrics
-Add comparison between household data and individual data
-Normalize monetary values
-Describe variables and categories
+1. Count number of households
+2. Count number of N/A and missing variables that are represented by numeric key
+3. Count nulls
+4. Add interpretations to each variables
+5. Indicate which variables may not be useful
+6. Investigate weights
+7. Count demographic categories
+8. Define Why categories aren't equally distributed with logic/other supporting metrics
+9. Add comparison between household data and individual data
+10. Normalize monetary values
+11. Describe variables and categories
 
 
 **Environment Setup**
