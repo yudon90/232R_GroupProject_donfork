@@ -44,6 +44,6 @@ Normalize monetary values
 Describe variables and categories
 
 
-Environment Setup
+**Environment Setup**
 
 pip install pyspark-dist-explore
