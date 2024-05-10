@@ -10,10 +10,12 @@ This project aims to uncover trends in happiness across the United States by ana
 **Data Set**: 
 This project will combine multiple datasets. 
 Individual & household census data from the American Community Survey years 2012-2022 excluding 2020 due to the data being impacted by the COVID-19 pandemic. Due to the size of the data, we selected features from the entire dataset using IPUMS. The datasets can be found in this Google Drive (https://drive.google.com/drive/folders/1BgAn6uJvuALPtYoMj1vYInDOWKlxUyXX?usp=drive_link) and can be accessed following these instructions https://usa.ipums.org/usa/extract_instructions.shtml
+Additionally, the World Happiness Report dataset from 2012-2022 excluding 2020 is being utilized to examine US happiness. 
+Together the dataset contains over 10 million individuals and 81 variables. For ease of understanding we have categorized the variables. 
 
- **Data Exploration**
- 
-Import Dataset
+World Happiness Dataset Variables 
+
+
 Household Census Data
 1. Household Variables: Geographic Variables
 2. Household Variables: Technical Variables
@@ -33,18 +35,13 @@ Visualize distribution of all variables over whole dataset and years
 
 **Preprocessing Methodology**
 
-1. Count number of households
-2. Count number of N/A and missing variables that are represented by numeric key
-3. Count nulls
-4. Add interpretations to each variables
-5. Indicate which variables may not be useful
-6. Investigate weights
-7. Count demographic categories
-8. Define Why categories aren't equally distributed with logic/other supporting metrics
-9. Add comparison between household data and individual data
-10. Normalize monetary values
-11. Describe variables and categories
-
+To generate the dataset an random sample of 1 million instance per year was generated. Variables were selected to be diverse enough to get a deep understanding of the US population and reflect the World Happiness Data varaibles but concise enough to be able to process. 
+The distribution of all variables was examined to ensure the dataset was representative of the US population. 
+For the household census dataset, each row repressnts an individuals but all variables were measured on a household level so the dataset was filtered to remove individuals within the same household to leave unique household instances. 
+The World Happiness Report Dataset was filtered to only include US datapoints between the year of 2012-2022.
+All monetary variables were normalized for inflation to the 2000 dollar values.
+Further scaling of all variables will be dependent on the analysis that is being performed.
+Any variables that were missing from too many individuals and/or households will be removed from further analysis. 
 
 **Environment Setup**
 
