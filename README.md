@@ -138,6 +138,15 @@ All monetary variables were normalized for inflation to the 2000 dollar values.
 Further scaling of all variables will be dependent on the analysis that is being performed. Most likely all variables will normalizes for clustering algorithms. Due to the differnces in range, normalization of some variables with large ranges may lead to misrepresnetation of the data so another transformation process may be more appropriate. Besides clustering individuals into like subpopulation and examining how they shift over time, other machine learning algorithms will be used to identify important variables that correlate with happiness. 
 Any variables that were missing from too many individuals and/or households will be removed from further analysis. 
 
+
+**Feature Expansion**
+
+Created a FULLTIME column in the individual dataset that is a 1 if the individual works 40+ hours per week, and a 0 if otherwise. Also created a COSTUTIL column in the household dataset that sums up all of the utility costs.
+
+**K Means**
+
+Ran the scaled/normalized household dataset through the kmeans clustering model with different values for k (2-10) and plotted the cost of features, so we can determine the best value for k.
+
 **Environment Setup**
 
 pip install pyspark-dist-explore
