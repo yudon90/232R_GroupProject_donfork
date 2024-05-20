@@ -162,9 +162,21 @@ To model the household dataset, K-Means was used for clustering. An Elbow curve 
 
 A decision tree was built using the household data to predict ownership status: rented or owned. The dataset also contains group quarter house which reported N/A to the ownership question. This subset only represents 10% of the test dataset. Rented properties represented 26% of the test dataset. The decision tree achieved a test accuracy of 99.9% with only 3 variables: Group Quarter, Inflation Adjusted House Value, and Year. The Group Quarter variable was used to filter out group quarters. The remaining 90% of households' ownership status was determined based on house value and year.
 
+## Evaluating Models and Comparing Test and Training Data (Fitting Graph)
+
+It appears that the training and test errors decrease sharply from a max depth of 1 to 2. This indicates that a tree depth of 1 is too simple to capture the underlying patterns in the data. After increasing from a max depth of 2, both the training and test errors still remain very low, so this may suggest that increasing the depth beyond 2 does not significantly improve the model's performance on both training and test data. 
+
+We also notice that the training and test errors overlap so closely in the fitting graph. 
+There are some potential reasons for this:
+
+1. Simplistic Data: The data might be very simple which makes it easy for even shallow trees to achieve high accuracy on both training and test sets.
+2. Small Data Variability: If the training and test sets are very similar, the errors might overlap due to a lack of variability in the data.
+
+Ways we can address #2 is to plot the distribution of features to see if there's significant overlap between training and test sets and we can address #1 by showing summary statistics using describe() in Spark. This will be done in the next step.
+
 ## Conclusion & Next Steps
 
-We were very happy with the results from our first few models. Besides the clustering on the Household data, we saw some surprisingly good test errors. We plan on dropping some features from the household dataset and tuning a few parameters for the clustering model. We feel we can get better results, however we all had trouble accessing the SDSC computer. This made running the models locally very difficult. When we secure full access, we will make the appropriate changes to improve our findings. We also discussed a couple other models such as predicting individuals' salary and homeowning ability based on the census data. 
+We were very happy with the results from our first few models. Besides the clustering on the Household data, we saw some surprisingly good test errors. We plan on dropping some features from the household dataset and tuning a few parameters for the clustering model. We feel we can get better results, however we all had trouble accessing the SDSC computer. This made running the models locally very difficult. When we secure full access, we will make the appropriate changes to improve our findings. We also discussed a couple other models such as predicting individuals' salary and homeowning ability based on the census data using a random forest model. 
 
 ## Environment Setup
 
