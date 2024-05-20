@@ -164,6 +164,8 @@ A decision tree was built using the household data to predict ownership status: 
 
 ## Conclusion & Next Steps
 
+We were very happy with the results from our first few models. Besides the clustering on the Household data, we saw some surprisingly good test errors. We plan on dropping some features from the Household dataset and tuning a few parameters for the clustering model. We feel we can get better results, however we all had trouble accessing the SDSC computer. This made running the models locally very difficult. When we secure full access, we will make the appropriate changes to improve our models. We also discussed a couple other models such as a classification model for classifying individuals' salary and homeowning ability based on the cencus data. 
+
 ## Environment Setup
 
 pip install pyspark-dist-explore
