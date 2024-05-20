@@ -130,13 +130,12 @@ Houshold Composition Variables
 
 **Preprocessing Methodology**
 
-To generate the dataset an random sample of 1 million instance per year was generated. Variables were selected to be diverse enough to get a deep understanding of the US population and reflect the World Happiness Data varaibles but concise enough to be able to process. 
+To generate the dataset a random sample of 1 million instances per year was generated. Variables were selected to be diverse enough to get a deep understanding of the US population and reflect the World Happiness Data variables but concise enough to be able to process. 
 The distribution of all variables was examined to ensure the dataset was representative of the US population. 
-For the household census dataset, each row repressnts an individuals but all variables were measured on a household level so the dataset was filtered to remove individuals within the same household to leave unique household instances. 
+For the household census dataset, each row represents an individuals but all variables were measured on a household level so the dataset was filtered to remove individuals within the same household to leave unique household instances. 
 The World Happiness Report Dataset was filtered to only include US datapoints between the year of 2012-2022.
-All monetary variables were normalized for inflation to the 2000 dollar values.
-Further scaling of all variables will be dependent on the analysis that is being performed. Most likely all variables will normalizes for clustering algorithms. Due to the differnces in range, normalization of some variables with large ranges may lead to misrepresnetation of the data so another transformation process may be more appropriate. Besides clustering individuals into like subpopulation and examining how they shift over time, other machine learning algorithms will be used to identify important variables that correlate with happiness. 
-Any variables that were missing from too many individuals and/or households will be removed from further analysis. 
+All monetary variables were normalized for inflation to the 2000 dollar values. 
+Variables that were missing from too many individuals and/or households will be removed from further analysis. For some selected categorical variables, categories were combined such as household definitions for the Group Quarters variable. For clustering, all variables were normalized using the MinMax Scaler to a 0-1 scale. Each column was scaled individually. The MinMax normalization function was selected to preserve the true distribution of each variable. 
 
 
 **Feature Expansion**
@@ -153,6 +152,12 @@ For the K-Means on the individual dataset, Elbow Curve was used to get the k-val
 The silhouette score is 0.869, which is quite high. A high silhouette score close to 1 indicates that the clusters are well-defined and distinct from each other. The points within each cluster are very similar to each other and different from points in other clusters. The clustering model has successfully grouped the data points into clusters that have high internal similarity and low external similarity.
 
 Based on the visualizations, KMeans appears to be a good model for clustering this dataset. The high silhouette score of 0.869 indicates that the clusters are well-defined and distinct from each other, with data points closer to their assigned cluster centers compared to other clusters. The PCA plot further supports this, showing clear separation between clusters in a two-dimensional space. The cluster centers plot reveals meaningful differences across several features, particularly income-related variables. Together, these findings suggest that KMeans effectively captures the underlying structure of the data, making it a suitable model for identifying and analyzing patterns within the dataset.
+
+To model the household dataset, K-Means was used for clustering. An Elbow curve was used to get the k-value of 3. However, the clustering was unsuccessful with a silhouette score of 0.359. Since K-means was unsuccessful, a decision tree was built using the household data to predict ownership status: rented or owned. 
+
+**Decision Trees**
+
+A decision tree was built using the household data to predict ownership status: rented or owned. The dataset also contains group quarter house which reported N/A to the ownership question. This subset only represents 10% of the test dataset. Rented properties represented 26% of the test dataset. The decision tree achieved a test accuracy of 99.9% with only 3 variables: Group Quarter, Inflation Adjusted House Value, and Year. The Group Quarter variable was used to filter out group quarters. The remaining 90% of households' ownership status was determined based on house value and year.
 
 
 **Environment Setup**
