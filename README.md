@@ -31,3 +31,8 @@ Team Members: Taylor Witte, Donald Yu, Praveen Manimaran, Vitush Agarwal, Parker
 
 
 # Collaboration 
+- **Taylor Witte:**
+- **Vitush Agarwal:**
+- **Donal Yu:**
+- **Parker Aman:**
+- **Praveen Manimaran:**
