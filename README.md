@@ -42,21 +42,21 @@ The goal of model 2 was to predict ownership from individual demographic and hou
 
 Figure ?: Model 1 PCA Plot of Clusters for Household Census KMeans
 
-![alt text](Model 1 PCA Plot of Clusters House)
+![alt text](twitte01/232R_GroupProject/model%201%20result%20images/Model_1_House_KMeans_PCA.png)
 
 
 Figure ?: Model 1 including Family Income Feature for Household Census KMeans
 
-![alt text](Model 1 including Family Income Feature House)
+![alt text](twitte01/232R_GroupProject/model%201%20result%20images/Model_1_House_KMeans_Clusters.png)
 
 Figure ?: Model 1 PCA Plot of Clusters for Individual Census KMeans
 
-![alt text](Model 1 PCA Plot of Clusters Individual)
+![alt text](twitte01/232R_GroupProject/model%201%20result%20images/Model_1_Individual_KMeans_PCA.png)
 
 
 Figure ?: Model 1 including Family Income Feature for Individual Census KMeans
 
-![alt text](Model 1 including Family Income Feature.v1 House)
+![alt text](twitte01/232R_GroupProject/model%201%20result%20images/Model_1_Individual_KMeans_Clusters.png)
 
 
 For the Household Census Kmeans, The Cluster Center plots show the average values for each feature for the three clusters identified. Each bar represents a feature and its height reflects the mean value of that feature within the cluster. K-means idenified three clusters: households who own, households who rent and group quarters.The silhouette score is 0.351 indicating the clusters are not well-defined and distinct from each other.
