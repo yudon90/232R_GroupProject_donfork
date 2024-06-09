@@ -5,6 +5,8 @@ UCSD Spring 2024 232R Big Data Analytics Using Spark Group Project
 Team Members: Taylor Witte, Donald Yu, Praveen Manimaran, Vitush Agarwal, Parker Aman
 
 # Introduction 
+Why was it chosen? Why is it cool? Discuss the general/broader impact of having a good predictive mode. i.e. why is this important?
+
 
 
 # Methods 
@@ -39,6 +41,8 @@ This fitting graph shows as the complexity (depth of trees) increases, we do con
 
 
 # Conclusion 
+This is where you do a mind dump on your opinions and possible future directions. Basically what you wish you could have done differently. Here you close with final thoughts.
+
 
 
 # Collaboration 
