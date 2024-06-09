@@ -41,17 +41,21 @@ The goal of model 2 was to predict ownership from individual demographic and hou
 ## Model 1 
 
 Figure ?: Model 1 PCA Plot of Clusters for Household Census KMeans
+
 ![alt text](Model 1 PCA Plot of Clusters House)
 
 
 Figure ?: Model 1 including Family Income Feature for Household Census KMeans
+
 ![alt text](Model 1 including Family Income Feature House)
 
 Figure ?: Model 1 PCA Plot of Clusters for Individual Census KMeans
+
 ![alt text](Model 1 PCA Plot of Clusters Individual)
 
 
 Figure ?: Model 1 including Family Income Feature for Individual Census KMeans
+
 ![alt text](Model 1 including Family Income Feature.v1 House)
 
 
