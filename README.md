@@ -24,10 +24,10 @@ The goal of model 2 was to predict ownership from individual demographic and hou
 # Results 
 ## Model 2 
 **Figure ?: Model 2 including Family Income Fearture**
-<img width="1462" alt="Screenshot 2024-06-08 at 2 49 18 PM" src="https://github.com/twitte01/232R_GroupProject/assets/168356340/3612920a-e1cb-41c5-a89e-39b4406c4fad">
+<img width="1207" alt="Screenshot 2024-06-08 at 6 48 46 PM" src="https://github.com/twitte01/232R_GroupProject/assets/168356340/f2874083-ee2b-47cd-858f-19e749d491fe">
 
 **Figure ?: Model 2 excluding Family Income Fearture**
-<img width="1479" alt="Screenshot 2024-06-08 at 2 50 34 PM" src="https://github.com/twitte01/232R_GroupProject/assets/168356340/341a14f0-bab0-4b14-84a6-0ffd5023d72e">
+<img width="1397" alt="Screenshot 2024-06-08 at 6 48 12 PM" src="https://github.com/twitte01/232R_GroupProject/assets/168356340/87d1dcd9-b5c6-42fe-8e9e-82cd7ec9f205">
 
 
 This fitting graph shows as the complexity (depth of trees) increases, we do continue to see an increase in accuracy, however, it is trivial. We can see the best depth to pick is 2. After this, the marginal increase in accuracy is not worth it.
