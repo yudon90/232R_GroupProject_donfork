@@ -38,6 +38,31 @@ In addition to the KMeans, Decision Tree was used to predict whether a house was
 The goal of model 2 was to predict ownership from individual demographic and household information. To begin, we chose several  variables that individuals have and do not have control of. The variables selected were Age, Race, Citizenship Status, Education Attainment, Class of Work, Marital Status, Number of own family members in the household, Number of families in the household, Group Quarter Status (Household vs Group Quarters), State, Year, Household Type (Married vs Single, etc), and Person Number in Sample Unit. To build this model we tested two types of models: logistic regression and decision tree. Both gave similar accuracy __ and __ respectively. We chose the decision tree which had a slightly higher accuracy and allowed for a more understandable model. The decision tree performed feature selection by only splitting on relevant features. To mitigate overfitting we only allowed for a maximum depth of the trees but did not limit the number of samples per split node. We did not consider the household weight which indicates how representative a household is of all households which could be included in further adaptations to decrease the bias of the model. We also ran this decision tree with the total household income and without, which gave some interesting results and will be discussed in further sections.
 
 # Results 
+## Model 1 
+
+Figure ?: Model 1 PCA Plot of Clusters for Household Census KMeans
+<img width="1397" alt="Model 1 PCA Plot of Clusters House" src="https://github.com/twitte01/232R_GroupProject/assets/168356340/87d1dcd9-b5c6-42fe-8e9e-82cd7ec9f205">
+
+
+Figure ?: Model 1 including Family Income Feature for Household Census KMeans
+<img width="1397" alt="Model 1 including Family Income Feature House" src="https://github.com/twitte01/232R_GroupProject/assets/168356340/87d1dcd9-b5c6-42fe-8e9e-82cd7ec9f205">
+
+Figure ?: Model 1 PCA Plot of Clusters for Individual Census KMeans
+<img width="1397" alt="Model 1 PCA Plot of Clusters Individual" src="https://github.com/twitte01/232R_GroupProject/assets/168356340/87d1dcd9-b5c6-42fe-8e9e-82cd7ec9f205">
+
+
+Figure ?: Model 1 including Family Income Feature for Individual Census KMeans
+<img width="1397" alt="Model 1 including Family Income Feature.v1 House" src="https://github.com/twitte01/232R_GroupProject/assets/168356340/87d1dcd9-b5c6-42fe-8e9e-82cd7ec9f205">
+
+
+For the Household Census Kmeans, The Cluster Center plots show the average values for each feature for the three clusters identified. Each bar represents a feature and its height reflects the mean value of that feature within the cluster. K-means idenified three clusters: households who own, households who rent and group quarters.The silhouette score is 0.351 indicating the clusters are not well-defined and distinct from each other.
+
+For the Individual Census Kmeans, the Cluster Centers plot shows the average values of each feature for the three identified clusters. Each bar represents a feature, and its height reflects the mean value of that feature within the cluster. The features include demographic, socio-economic, and health-related variables. Notably, variables such as AINCTOT (total income), AFTOTINC (family total income), and POVERTY show significant differences across clusters, indicating that income and poverty status are key distinguishing factors among the clusters.
+The silhouette score is 0.869, which is quite high. A high silhouette score close to 1 indicates that the clusters are well-defined and distinct from each other. The points within each cluster are very similar to each other and different from points in other clusters.
+
+The decision tree was able to predict with 99% accuracy whether a house was owned or rented based on the four variables. First group quarters were excluded since they are neither rented or owned. 
+
+
 ## Model 2 
 **Figure ?: Model 2 including Family Income Fearture**
 <img width="1207" alt="Screenshot 2024-06-08 at 6 48 46 PM" src="https://github.com/twitte01/232R_GroupProject/assets/168356340/f2874083-ee2b-47cd-858f-19e749d491fe">
@@ -62,6 +87,6 @@ This is where you do a mind dump on your opinions and possible future directions
 # Collaboration 
 - **Taylor Witte:**
 - **Vitush Agarwal:**
-- **Donal Yu:**
+- **Donald Yu:**
 - **Parker Aman:**
 - **Praveen Manimaran:**
